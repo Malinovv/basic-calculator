@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Application</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Wrap everything into div element with class container **-->
+    <!-- Create a heading of the page **-->
+
+    <!-- Create input fields for the firstoperand, second operand and the type of the matematical operation -->
+
+    <!-- Create a button for starting the operation process -->
+
+    <!-- Chreate an element which will hold the result -->
+    <div class="container">
+      <h1>BASIC CALCULATOR</h1>
+
+      <label for="firstoperand"> Enter First number</label>
+      <input type="number" id="firstoperand" />
+      <label for="secondoperand"> Enter Second number</label
+      ><input type="number" id="secondoperand" />
+      <select name="Mathematical-Operation" id="math_operation">
+        <option value="addition">addition</option>
+        <option value="subtraction">Subtraction</option>
+        <option value="multiplication">Multiplication</option>
+        <option value="division">Division</option>
+      </select>
+      <button type="button" onclick="calculate" id="presmetaj">
+        Calculate
+      </button>
+      <p id="result"></p>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>

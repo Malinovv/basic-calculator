@@ -15,16 +15,22 @@ function calculate(onClick) {
   let operation = document.getElementById("math_operation").value;
   let result = document.getElementById("result");
 
-  if (operation === "addition") {
-    result.innerHTML = operand1 + operand2;
-  } else if (operation === "subtraction") {
-    result.innerHTML = operand1 - operand2;
-  } else if (operation === "multiplication") {
-    result.innerHTML = operand1 * operand2;
-  } else if (operation === "division") {
-    result.innerHTML = operand1 / operand2;
-  } else {
-    result.innerHTML = "Invalid calculation";
+  switch (operation) {
+    case "addition":
+      result.innerHTML = operand1 + operand2;
+      break;
+    case "subtraction":
+      result.innerHTML = operand1 - operand2;
+      break;
+    case "multiplication":
+      result.innerHTML = operand1 * operand2;
+      break;
+    case "division":
+      result.innerHTML = operand1 / operand2;
+      break;
+    default:
+      "Invalid Result";
+      break;
   }
   document.getElementById(
     "result"
